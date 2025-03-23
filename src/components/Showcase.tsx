@@ -1,3 +1,5 @@
+// This component has been removed from the application
+// It can be deleted or kept for future reference
 
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
