@@ -40,13 +40,13 @@ const Process = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-6 max-w-5xl mx-auto">
           {steps.map((step, index) => (
             <div 
               key={index} 
               className={cn(
-                "flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100",
-                "opacity-0 animate-fade-in",
+                "flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100 flex-1",
+                "opacity-0 animate-fade-in relative",
                 `animation-delay-${step.delay + 2}00`
               )}
             >
@@ -58,8 +58,11 @@ const Process = () => {
               <p className="text-muted-foreground">{step.description}</p>
               
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 left-full w-12 h-[2px] bg-gray-200">
-                  <div className="absolute top-1/2 right-0 w-2 h-2 -mt-1 rounded-full bg-primary"></div>
+                <div className="hidden lg:flex absolute top-1/3 -right-3 items-center justify-center z-10">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                  </div>
+                  <div className="w-4 h-[2px] bg-primary/30"></div>
                 </div>
               )}
             </div>
