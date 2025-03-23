@@ -7,11 +7,9 @@ const Pricing = () => {
   const features = [
     "Upload your handwriting",
     "AI font generation",
-    "Web & desktop compatible",
     "Commercial use license",
     "PDF template included",
     "Lifetime font access",
-    "Free updates",
   ];
 
   return (
@@ -35,7 +33,7 @@ const Pricing = () => {
                 
                 <div className="mb-6">
                   <div className="flex items-end gap-1">
-                    <span className="text-4xl font-bold">$49</span>
+                    <span className="text-4xl font-bold">$4</span>
                     <span className="text-muted-foreground mb-1">one-time</span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-1">No subscription, yours forever</p>
