@@ -31,9 +31,9 @@ const steps = [
 
 const Process = () => {
   return (
-    <section id="how-it-works" className="py-20 bg-gray-50">
-      <div className="section-container">
-        <div className="text-center mb-16">
+    <section id="how-it-works" className="py-12 bg-gray-50">
+      <div className="section-container py-8">
+        <div className="text-center mb-12">
           <h2 className="section-title opacity-0 animate-fade-in">How It Works</h2>
           <p className="section-subtitle opacity-0 animate-fade-in animation-delay-100">
             Create your personalized font in four simple steps
